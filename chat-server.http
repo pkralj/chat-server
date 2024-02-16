@@ -1,0 +1,36 @@
+### Get Group
+GET http://localhost:8080/groups?groupName=group1
+
+### Get User
+GET http://localhost:8080/users?userName=user1
+
+### Get Message
+GET http://localhost:8080/messages?id=1
+
+### Create Group
+PUT http://localhost:8080/groups/group1
+Content-Type: application/json
+
+{
+  "groupName": "group1"
+}
+
+### Create User
+PUT http://localhost:8080/users/user1
+Content-Type: application/json
+
+{
+  "userName": "user1",
+  "name": "Patrik",
+  "surname": "Kralj"
+}
+
+### Create Message
+PUT http://localhost:8080/message
+Content-Type: application/json
+
+{
+  "message": "test poruka",
+  "group": "group1",
+  "user": "user1"
+}
